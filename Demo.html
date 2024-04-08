@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhóm 1</title>
+</head>
+<body>
+<h1>Khái niệm Javascript và đặt tên </h1>
+
+<p id="demo">click</p>
+<p onmouseover="mouseover()" id="color-red" >Codygym C0324H1</p>
+
+
+<script>
+    <!--Sự kiện onclick-->
+    var demo = document.getElementById("demo");
+    demo.addEventListener("click",clickfuntion);
+    function clickfuntion()
+    {
+        alert("Nhóm 1,xin chào");
+    }
+
+
+    // Sự kiện onmounover
+    function mouseover(){
+        document.getElementById("color-red").style.color="red";
+    }
+
+</script>
+
+</body>
+</html>
